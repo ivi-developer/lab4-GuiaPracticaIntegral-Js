@@ -1,0 +1,2 @@
+//Itera sobre las entradas del Map e imprime cada par clave-valor.
+export const iterarTodoElMap = (map, callback) => map.forEach(callback)//el forEach de map recive PRIMERO VALUE, SEGUNDO KEY, ultimo el map
