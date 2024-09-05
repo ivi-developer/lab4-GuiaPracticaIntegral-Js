@@ -7,6 +7,8 @@ import { callbackDeFiltrarPares, filtrarPares } from "./callbacks/filtrarNumeros
 import { multiplicar } from "./callbacks/multiplicarNumerosConCallback.js";
 import { operarNumeros, resta, suma } from "./callbacks/operacionesConNumerosUsandoCallbacks.js";
 import { funcionAsincronica } from "./callbacks/usoDeSetTimeoutConCallbacks.js";
+import { combinarObjectArray } from "./ejerciciosAvanzados/combinarObjectArray.js";
+import { ultimaFuncion } from "./ejerciciosAvanzados/elminiarYMantenerOrden.js";
 import { sumaDeCuadradosDePares } from "./ejerciciosAvanzados/encadenamientosDeMetodos.js";
 import { mapToObject } from "./ejerciciosAvanzados/mapToObject.js";
 import { objectToMap } from "./ejerciciosAvanzados/objecttToMap.js";
@@ -49,3 +51,19 @@ console.log(mapearArrayAMap([2, 3, 4, 2, 3, 5, 4, 5, 6]))
 console.log(sumaDeCuadradosDePares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 console.log(objectToMap({ a: 1, b: 2, c: 3 }))
 console.log(mapToObject([["nombre", "Pedro"], ["edad", 30], ["ciudad", "Sevilla"]]))
+const estudiantes = [
+    { id: 1, nombre: 'Juan' },
+    { id: 2, nombre: 'María' },
+    { id: 3, nombre: 'Carlos' },
+    { id: 4, nombre: 'Ana' },
+    { id: 5, nombre: 'Luis' }
+]
+const notas = [
+    { idAlumno: 1, nota: 8.5 },
+    { idAlumno: 2, nota: 9.0 },
+    { idAlumno: 3, nota: 7.0 },
+    { idAlumno: 4, nota: 6.5 },
+    { idAlumno: 5, nota: 8.0 }
+]
+console.log(JSON.stringify(combinarObjectArray(estudiantes, notas)))
+console.log(ultimaFuncion([1, 2, 2, 3, 4, 4, 5, 1, 6, 7]))
