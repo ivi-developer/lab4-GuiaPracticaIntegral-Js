@@ -1,0 +1,2 @@
+//Dado un array ["árbol", "casa", "elefante", "sol"], usa filter para obtener las palabras con menos de 5 letras
+export const filtrarPorLongitud = (array, longitud) => array.filter(a => a.length < longitud)

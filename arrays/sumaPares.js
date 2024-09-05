@@ -1,0 +1,2 @@
+//Dado un array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], usa filter para obtener los números pares y luego utiliza reduce para sumarlos
+export const sumaPares = array => array.filter(a => a % 2 == 0).reduce((a, b) => a + b, 0)
